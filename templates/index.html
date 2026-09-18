@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz de Tecnologia</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .introducao {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .pergunta {
+            margin-top: 25px;
+        }
+
+        .pergunta h3 {
+            color: #444;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .resultado {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .feedback {
+            margin-top: 30px;
+            padding: 25px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .feedback h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .feedback label {
+            margin-top: 18px;
+            font-weight: bold;
+        }
+
+        .mensagem {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            text-align: center;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .rodape {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 13px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💻 Quiz de Tecnologia</h1>
+
+    <p class="introducao">
+        Teste seus conhecimentos básicos sobre programação
+        e Tecnologia da Informação.
+    </p>
+
+
+    <!-- QUIZ -->
+
+    <form method="POST" action="/">
+
+        <label for="nome">Digite seu nome:</label>
+
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+        >
+
+
+        <!-- PERGUNTA 1 -->
+
+        <div class="pergunta">
+
+            <h3>
+                1. Qual linguagem de programação estamos utilizando?
+            </h3>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta1"
+                    value="A"
+                    required
+                >
+                A) Python
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta1"
+                    value="B"
+                >
+                B) HTML
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta1"
+                    value="C"
+                >
+                C) SQL
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta1"
+                    value="D"
+                >
+                D) Java
+            </label>
+
+        </div>
+
+
+        <!-- PERGUNTA 2 -->
+
+        <div class="pergunta">
+
+            <h3>
+                2. Qual comando é utilizado para mostrar uma mensagem na tela?
+            </h3>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta2"
+                    value="A"
+                    required
+                >
+                A) input()
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta2"
+                    value="B"
+                >
+                B) print()
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta2"
+                    value="C"
+                >
+                C) if
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta2"
+                    value="D"
+                >
+                D) while
+            </label>
+
+        </div>
+
+
+        <!-- PERGUNTA 3 -->
+
+        <div class="pergunta">
+
+            <h3>
+                3. Qual comando permite receber uma informação digitada pelo usuário?
+            </h3>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta3"
+                    value="A"
+                    required
+                >
+                A) print()
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta3"
+                    value="B"
+                >
+                B) input()
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta3"
+                    value="C"
+                >
+                C) if
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="resposta3"
+                    value="D"
+                >
+                D) for
+            </label>
+
+        </div>
+
+
+        <button type="submit">
+            Finalizar Quiz
+        </button>
+
+    </form>
+
+
+    <!-- RESULTADO -->
+
+    {% if resultado %}
+
+        <div class="resultado">
+
+            <h2>Resultado</h2>
+
+            <p>
+                {{ resultado.nome }}, você acertou
+                <strong>{{ resultado.pontuacao }}</strong>
+                de 3 perguntas!
+            </p>
+
+            <p>
+                Data e hora:
+                <strong>{{ resultado.data }}</strong>
+            </p>
+
+        </div>
+
+
+        <!-- FEEDBACK -->
+
+        {% if not feedback_enviado %}
+
+            <div class="feedback">
+
+                <h2>📝 Deixe seu feedback</h2>
+
+                <p>
+                    Sua opinião ajuda a avaliar a atividade
+                    e melhorar o projeto.
+                </p>
+
+
+                <form method="POST" action="/feedback">
+
+                    <!-- Dados do resultado -->
+
+                    <input
+                        type="hidden"
+                        name="nome"
+                        value="{{ resultado.nome }}"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="pontuacao"
+                        value="{{ resultado.pontuacao }}"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="data"
+                        value="{{ resultado.data }}"
+                    >
+
+
+                    <!-- Avaliação -->
+
+                    <label for="avaliacao">
+                        Você achou o quiz fácil de entender?
+                    </label>
+
+                    <select
+                        id="avaliacao"
+                        name="avaliacao"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="Sim">
+                            Sim
+                        </option>
+
+                        <option value="Mais ou menos">
+                            Mais ou menos
+                        </option>
+
+                        <option value="Não">
+                            Não
+                        </option>
+
+                    </select>
+
+
+                    <!-- Aprendizado -->
+
+                    <label for="aprendizado">
+                        Você aprendeu algo novo?
+                    </label>
+
+                    <select
+                        id="aprendizado"
+                        name="aprendizado"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="Sim">
+                            Sim
+                        </option>
+
+                        <option value="Não">
+                            Não
+                        </option>
+
+                    </select>
+
+
+                    <!-- Comentário -->
+
+                    <label for="comentario">
+                        Deixe um comentário:
+                    </label>
+
+                    <textarea
+                        id="comentario"
+                        name="comentario"
+                        rows="4"
+                        placeholder="Digite seu comentário..."
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Enviar Feedback
+                    </button>
+
+                </form>
+
+            </div>
+
+        {% else %}
+
+            <div class="mensagem">
+                ✅ Obrigado por participar e enviar seu feedback!
+            </div>
+
+        {% endif %}
+
+    {% endif %}
+
+
+    <div class="rodape">
+        Projeto de Atividade Extensionista -
+        Capacitar Jovens com Tecnologia da Informação
+    </div>
+
+</div>
+
+</body>
+
+</html>

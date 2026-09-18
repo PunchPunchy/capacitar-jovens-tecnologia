@@ -1,0 +1,4 @@
+feedbacks.csv
+.venv/
+__pycache__/
+.idea/
